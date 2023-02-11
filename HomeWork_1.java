@@ -86,7 +86,7 @@ public class HomeWork_1 {
         System.out.println();
 
         // raceRoute:
-           // race track length = from 15 000 km to 32 000 km
+           // race track length = from 5 000 km to 15 000 km
            // number of sections of the race track = from 5 to 10
         int raceRouteLength = (int)(Math.random() * (15000 - 5000 + 1)) + 5000;
         int section = (int)(Math.random() * (10 - 5 + 1)) + 5;

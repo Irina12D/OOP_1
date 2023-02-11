@@ -11,7 +11,8 @@ public class HomeWork_1 {
        race(racingParticipants());
         
     }
-
+    
+    // метод для создания участников гонки	
     static ArrayList<Car>  racingParticipants(){
         // 9 racing cars
         String[] modelList = {"Bugatti", "Koenigsegg", "Hennessey", "Ford", "AstonMartin", "McLaren", "Pagani", "Lamborghini", "Ferrari"};
@@ -41,6 +42,7 @@ public class HomeWork_1 {
         return racingCars;        
     }
 
+    // вспомогательный метод для разбиения трассы длины length на parts частей случайным образом	
     static int[] routeSplit(int length, int parts)
     {
         int[]result = new int[parts];
@@ -62,6 +64,7 @@ public class HomeWork_1 {
         return result;
     }
 
+    // вспомогательный метод для нахождения номера лидера (по времени)	
     static int leader(double[] arr)
     {
         int minind = 0;
@@ -73,6 +76,7 @@ public class HomeWork_1 {
         return minind;
     }
 
+    // метод организации гонки	
     static void race(ArrayList<Car>  participants)
     {
         System.out.println("Ladies and gentlemen, the race begins!\nWe present to you the participants of the race:");
@@ -112,6 +116,7 @@ public class HomeWork_1 {
         raceResult(participants, times);
     }
 
+    // метод для формирования и вывода финальной таблицы гонки	
     static void raceResult(ArrayList<Car>  participants, double[] resultingTime)
     {
         boolean obmen = true;
